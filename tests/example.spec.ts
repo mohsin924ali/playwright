@@ -30,3 +30,7 @@ test("get started link", async ({ page }) => {
     page.getByRole("heading", { name: "Installation" })
   ).toBeVisible();
 });
+
+test("test text", async ({ page }) => {
+  await page.goto("https://playwright.dev/");
+});
